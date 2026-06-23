@@ -2,12 +2,11 @@
 #
 # crispy-comments installer
 #
-#   curl -fsSL https://example.com/REPLACE_ME/crispy-comments/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/DanverImbue/crispy-comments/main/install.sh | bash
 #
 set -euo pipefail
 
-# --- placeholder: point this at the raw SKILL.md once the repo is online ---
-SKILL_URL="https://example.com/REPLACE_ME/crispy-comments/SKILL.md"
+SKILL_URL="https://raw.githubusercontent.com/DanverImbue/crispy-comments/main/SKILL.md"
 
 DEST_DIR="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}/crispy-comments"
 

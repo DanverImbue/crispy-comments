@@ -12,7 +12,7 @@ It reviews the comments added or changed on the current branch's diff and remove
 ## Install
 
 ```sh
-curl -fsSL https://example.com/REPLACE_ME/crispy-comments/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/DanverImbue/crispy-comments/main/install.sh | bash
 ```
 
 This drops `SKILL.md` into `~/.claude/skills/crispy-comments/` (override with `CLAUDE_SKILLS_DIR`).
