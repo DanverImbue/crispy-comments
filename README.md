@@ -1,13 +1,10 @@
 # crispy-comments
 
-A [Claude Code](https://claude.com/claude-code) skill that prunes code comments down to what actually helps future maintainers.
+An [Agent Skill](https://agentskills.io/home) written to curb coding agent's fine-tuned preference for narrating their inner chain-of-thought while writing code.
 
-It reviews the comments added or changed on the current branch's diff and removes:
+Based on [this tweet](https://x.com/404Cause/status/2059142734783603025)
 
-- incidental history, defensive justification, and correctness arguments
-- comments that restate facts likely to change (subclass counts, variant lists, call sites)
-- commented-out code (version control already remembers it)
-- ASCII-art banners and box-drawing section dividers
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Lot of lambda in:<br><br>&quot;For each code comment, ask: does this help future maintainers understand the code, or merely explain today’s bug fix? Remove incidental history, persuasive rationale, and correctness arguments.&quot;</p>&mdash; Danver Braganza (@404Cause) <a href="https://x.com/404Cause/status/2059142734783603025?ref_src=twsrc%5Etfw">May 26, 2026</a></blockquote>
 
 ## Install
 
@@ -15,11 +12,11 @@ It reviews the comments added or changed on the current branch's diff and remove
 curl -fsSL https://raw.githubusercontent.com/DanverImbue/crispy-comments/main/install.sh | bash
 ```
 
-This drops `SKILL.md` into `~/.claude/skills/crispy-comments/` (override with `CLAUDE_SKILLS_DIR`).
+This drops `SKILL.md` into `~/.claude/skills/crispy-comments/` (override with `AGENT_SKILLS_DIR`).
 
 ## Usage
 
-In Claude Code, invoke it with:
+In your coding agent, invoke it with:
 
 ```
 /crispy-comments
