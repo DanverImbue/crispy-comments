@@ -19,7 +19,7 @@ Remove ASCII-art banners and box-drawing section dividers. They add visual noise
 
 Never keep a comment because the surrounding code has more like it. "The rest of this file does it this way" is not a reason to leave cruft in; it is a reason to take the rest out too. A file full of banners is a file with a problem, not a house style worth matching. Every rule above applies to your addition at full strength no matter what its neighbors look like.
 
-Banners are where this excuse surfaces most, so they get the strongest form of the rule: when a file you touch contains ASCII banners or box-drawing dividers, delete every one in that file, not only the ones your diff introduced. Adding a banner so your new section matches the existing ones, and sparing your own because the file would look uneven without it, are the same mistake — the rule is what changes the file, not the file that relaxes the rule.
+Banners are where this excuse surfaces most, so the rule there is absolute: when a file you touch contains ASCII banners or box-drawing dividers, delete every one in that file, not only the ones your diff introduced. Adding a banner so your new section matches the existing ones, and sparing your own because the file would look uneven without it, are the same mistake — the rule is what changes the file, not the file that relaxes the rule.
 
 The sweep reaches the whole of each file the diff touches. It stops there: leave files the diff does not touch alone.
 
